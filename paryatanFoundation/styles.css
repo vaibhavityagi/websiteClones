@@ -1,0 +1,279 @@
+/* Issues
+
+-> non-responsive
+-> background image is not starting from the top, starts after the navigation bar ends
+-> in the payment section, the height of the overall section is too big, how to shorten it?
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+pre {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* nav bar */
+
+a {
+    text-decoration: none;
+    color: #dbe1e6;
+}
+
+header {
+    position: sticky;
+    top: .1px;
+}
+
+.main-nav {
+    background-color: white;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav:hover {
+    background-color: white;
+    box-shadow: 1px -2px 6px black;
+    opacity: 1;
+}
+
+.nav-item {
+    padding: 1.2em;
+    color: black;
+}
+
+.nav-item:hover {
+    background-color: #ccc;
+    opacity: 1;
+}
+
+/* paryatan foundation name */
+.nav-item:first-child {
+    letter-spacing: .2em;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* home screen section */
+
+.main {
+    background-image: url("images/farmvisit.jpg");
+    background-size: cover;
+    height: 93vh;
+}
+
+.main-text {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    padding-left: 4em;
+}
+
+.main-text h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: .7em;
+}
+
+.main-text p {
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding-bottom: 1em;
+}
+
+.to-about {
+    display: inline-block;
+    width: 47%;
+    background-color: white;
+    color: black;
+    padding: 0.7em 1.5em;
+    margin-top: 1.5em;
+    line-height: 1.9em;
+    font-size: large;
+    text-align: justify;
+}
+
+.to-about:hover {
+    background-color: #ccc;
+}
+
+/* about section */
+#about {
+    height: 70vh;
+    padding: 8em 10em;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.about-text h2 {
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+}
+
+.about-items {
+    font-size: 70px;
+}
+
+.flex-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+/* payment section - need to crop the bottom*/
+#pay {
+    background-color: #f1f1f1;
+    display: flex;
+    gap: 2em;
+    padding: 8em 3em 0em 3em;
+    line-height: 1.9em;
+}
+
+.pay-info h3 {
+    font-weight: 400;
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.pay-info p:nth-child(3) {
+    margin-bottom: 1em;
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 1em 1em 1em 0em;
+    padding: 0.6em 1em;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #c9c4c4;
+    color: black;
+}
+
+#pay img {
+    height: 70%;
+    border-radius: 3%;
+}
+
+/* work and projects */
+
+#work {
+    text-align: center;
+    line-height: 1.9em;
+    padding-bottom: 2em;
+}
+
+#work h2 {
+    padding: 5em 0em 1.5em;
+    font-weight: 400;
+}
+
+#work p {
+    font-size: 17px;
+    margin-bottom: 2em;
+}
+
+#work .flex {
+    justify-content: space-around;
+    margin: 0em 1em;
+}
+
+#work .flex li:hover {
+    color: #ccc;
+}
+
+/* contact */
+#contact {
+    background-color: #f1f1f1;
+    padding-top: 8em;
+}
+
+#contact h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 3em;
+}
+
+#contact .flex {
+    gap: 1em;
+    align-items: baseline;
+    margin-left: 2em;
+}
+
+#contact .flex p {
+    margin-bottom: 1em;
+}
+
+#contact .button {
+    margin: 1em 0em 8em 2em;
+}
+
+/* to the top section */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5em 5em;
+}
+
+.footer .flex {
+    justify-content: center;
+    gap: 0.5em;
+    margin: 2em 2em;
+}
+
+.footer .button {
+    background-color: #f1f1f1;
+    color: black;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-right: 0em;
+}
+
+.footer .button:hover {
+    background-color: #ccc;
+}
